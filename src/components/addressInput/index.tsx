@@ -26,10 +26,9 @@ export const AddressInput = ({
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    setFixed(false);
     if (!startValue) {
       setError(false);
-      if (value && !fixed) {
+      if (value) {
         const time = setTimeout(async () => {
           try {
             const options = await getCoordinates(value);

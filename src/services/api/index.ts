@@ -12,7 +12,7 @@ export const getCoordinatesRequest = (input: string) => {
     url: geoLocationApi,
     params: { address: input },
     headers: {
-      "X-RapidAPI-Key": process.env.REACT_APP_GEO_API_KEY,
+      "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
       "X-RapidAPI-Host": geoLocationApiHost,
     },
   };
@@ -34,7 +34,7 @@ export const getDistanceRequest = (
     },
     headers: {
       "Content-Type": "application/json",
-      "X-RapidAPI-Key": process.env.REACT_APP_GEO_API_KEY,
+      "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
       "X-RapidAPI-Host": distanceApiHost,
     },
   };
