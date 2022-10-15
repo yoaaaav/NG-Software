@@ -26,7 +26,7 @@ export const AddressInput = ({
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    if (!startValue) {
+    if (!startValue && !fixed) {
       setError(false);
       if (value) {
         const time = setTimeout(async () => {
@@ -75,6 +75,7 @@ export const AddressInput = ({
           placeholder="type address"
           value={value}
           onChange={({ target }) => setValue(target.value)}
+          onFocus={() => setFixed(false)}
           onClick={() =>
             step === ESteps.DELIVERY_TYPE && changeStep(ESteps.ADDRESSES)
           }
