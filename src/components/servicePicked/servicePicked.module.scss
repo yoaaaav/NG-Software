@@ -1,0 +1,27 @@
+@import "../../theme.scss";
+
+.service_picked_container {
+  @extend %floatBox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  padding-bottom: 0.8rem;
+
+  p {
+    margin: 0;
+    color: $offBlack2;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+
+  button {
+    all: unset;
+    color: $purple;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    cursor: pointer;
+  }
+}

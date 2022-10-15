@@ -1,0 +1,28 @@
+@import "./theme.scss";
+
+html {
+  height: 100%;
+  body {
+    height: 100%;
+    margin: 0;
+    .app {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      font-family: $mainFont;
+
+      .content_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+body > div {
+  height: 100%;
+}

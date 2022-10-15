@@ -1,0 +1,16 @@
+@import "../../theme.scss";
+
+.address_container {
+  padding: 1rem;
+  img {
+    margin: 0.5rem 0;
+  }
+
+  h5 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+}

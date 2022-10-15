@@ -1,0 +1,28 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+$offWhite: #e7ebf6;
+$offWhite2: #f7f7f8;
+$offBlack: #1c1f34;
+$offBlack2: #1f233b;
+$blue1: #3b4478;
+$blue2: #677bc5;
+$darkBlue: #283060;
+$yellow: #ffef55;
+$gray: #848793;
+$lightGray: #f3f3f6;
+$lightGray2: #c1c2c9;
+$purple: #505fb4;
+$red: #d10000;
+$boxShadowColor: rgba(28, 31, 52, 0.1);
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+$mainFont: "Roboto", sans-serif;
+
+// Inherit
+%floatBox {
+  background-color: $white;
+  border-radius: 0.4rem;
+  box-shadow: 0px 1px 3px $boxShadowColor;
+}

@@ -1,0 +1,64 @@
+@import "../../theme.scss";
+
+.delivary_option_container {
+  display: flex;
+  padding: 0.5rem 1rem;
+  padding-bottom: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $offWhite2;
+  border-radius: 0.25rem;
+
+  .details {
+    h2,
+    h3,
+    h4,
+    span {
+      margin: 0;
+    }
+    h2,
+    h3 {
+      display: flex;
+      align-items: baseline;
+      gap: 0.2rem;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.5rem;
+      color: $offBlack2;
+      span {
+        font-size: 0.7rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        color: $purple;
+      }
+    }
+    h4 {
+      color: $gray;
+      font-size: 0.8rem;
+      font-weight: 400;
+      line-height: 1rem;
+    }
+    h3 {
+      font-weight: 500;
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+
+    button {
+      all: unset;
+      color: $darkBlue;
+      background-color: $yellow;
+      border-radius: 0.2rem;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.4rem;
+      padding: 0.9rem 1.4rem;
+      padding-top: 0.8rem;
+      cursor: pointer;
+    }
+  }
+}

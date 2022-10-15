@@ -1,0 +1,30 @@
+@import "../../theme.scss";
+
+td.service_box_container {
+  text-align: center;
+  padding: 2rem 1.8rem;
+  background-color: $lightGray;
+  width: 33.3%;
+  cursor: pointer;
+  p {
+    margin: 0;
+    margin-top: 1rem;
+    color: $offBlack;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1rem;
+  }
+
+  &.other {
+    padding: 1.2rem;
+    border-radius: 0 0 0.4rem 0.4rem;
+  }
+
+  &.top_left {
+    border-top-left-radius: 0.4rem;
+  }
+
+  &.top_right {
+    border-top-right-radius: 0.4rem;
+  }
+}
